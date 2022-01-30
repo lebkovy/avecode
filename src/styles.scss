@@ -1,0 +1,11 @@
+@import '~bootstrap/dist/css/bootstrap-grid.css';
+@import './src/app/shared/theme/typography';
+@import './src/app/shared/theme/colors';
+@import './src/app/shared/theme/buttons';
+
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
