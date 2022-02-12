@@ -1,18 +1,53 @@
 @import './colors';
 
+$store-logo-size: 32px;
+
 .btn {
   border-radius: 200px;
-  padding: 12px 19px;
+  padding: 8px 18px;
   color: white;
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  width: fit-content;
+  max-height: 60px;
+  &.btn-lg {
+    font-size: 18px;
+    padding: 10px 32px;
+    height: 60px;
+  }
   &.btn-primary {
     background-color: $primary-color;
     transition: .2s;
     &:hover {
       background-color: $primary-color-darker;
+    }
+  }
+  &.btn-store {
+    display: flex;
+    background: transparent;
+    border: 1px solid $dark-color;
+    span {
+      align-self: center;
+      margin: 0 12px;
+      .heading, .platform {
+        text-align: left;
+      }
+      .heading {
+        font-size: 14px;
+        font-weight: 400;
+        color: grey;
+        margin-bottom: 4px;
+      }
+    }
+    &:hover {
+      background-color: $dark-color;
+    }
+    .logo {
+      width: $store-logo-size;
+      height: $store-logo-size;
+      align-self: center;
     }
   }
 }

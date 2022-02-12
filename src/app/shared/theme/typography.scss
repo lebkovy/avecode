@@ -2,3 +2,19 @@ h3 {
   font-size: 44px;
   width: auto;
 }
+.headline-color {
+  background: -webkit-linear-gradient(yellow, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: hsla(0,0%,100%,.8);
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 600;
+}
