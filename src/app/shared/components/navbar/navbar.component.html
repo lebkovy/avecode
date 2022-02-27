@@ -1,0 +1,9 @@
+<div (scroll)="onWindowScroll();" class="navbar" id="navbar" [ngClass]="{'color': !(transparentNavbar$ | async)}">
+    <div *ngFor="let item of navItems; let i = index"
+         (click)="scrollTo(item.anchor)"
+         class="nav-item mx-2 align-self-center"
+         [ngClass]="{'active': (transparentNavbar$ | async) && i == 0}"
+    >
+        {{item.label | titlecase}}
+    </div>
+</div>

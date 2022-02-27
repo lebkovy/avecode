@@ -1,0 +1,31 @@
+@import 'src/app/shared/theme/colors';
+
+$pill-size: 72px;
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  fa-icon {
+    font-size: 35px;
+  }
+
+  .pill {
+    height: $pill-size;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+
+  .pill-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 22px;
+    align-self: center;
+  }
+
+  .pill-icon {
+    height: $pill-size;
+    width: $pill-size;
+  }
+}

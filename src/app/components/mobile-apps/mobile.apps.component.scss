@@ -1,0 +1,23 @@
+@import 'src/app/shared/theme/colors';
+
+.tool-logo {
+  height: 35px;
+  margin-right: 24px;
+}
+.latest {
+  display: block;
+  margin: 0 auto;
+}
+
+.pill {
+  margin-bottom: 24px;
+  .pill-icon.third {
+    margin-right: 12px;
+  }
+}
+.link-href {
+  text-decoration: none;
+  .btn-store:hover {
+    border-color: $android-color;
+  }
+}

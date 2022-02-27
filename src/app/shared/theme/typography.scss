@@ -1,3 +1,5 @@
+@import 'src/app/shared/theme/colors';
+
 h3 {
   font-size: 44px;
   width: auto;
@@ -17,4 +19,23 @@ p {
 
 .text-bold {
   font-weight: 600;
+}
+
+.label {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-bottom: 14px;
+  &.primary {
+    color: $primary-color;
+  }
+  &.secondary {
+    color: $secondary-color;
+  }
+  &.third {
+    color: $third-color;
+  }
+}
+.header {
+  font-size: 3vw;
+  font-weight: bold;
 }

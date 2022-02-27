@@ -1,0 +1,28 @@
+.wave {
+  width: 100vw;
+}
+.wrapper {
+  position: absolute;
+  display: flex;
+  top: 54px;
+  left: 54px;
+  right: 54px;
+  .image {
+    width: 75%;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    color: black;
+    .header {
+      font-size: 4.5vw;
+      font-weight: bold;
+    }
+    .subheader {
+      font-size: 1.5vw;
+      margin: 24px 0;
+      line-height: 1.5;
+    }
+  }
+}

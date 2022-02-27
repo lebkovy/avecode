@@ -4,30 +4,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { OfferComponent } from './components/offer/offer.component';
 import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { GridSectionComponent } from './shared/components/grid-section/grid-section.component';
-import { LatestComponent } from './components/latest/latest.component';
-
-export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'skills', component: SkillsComponent }
-];
+import { MobileAppsComponent } from './components/mobile-apps/mobile.apps.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { AboutComponent } from './components/about/about.component';
+import { QuoteComponent } from './components/about/quote/quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SkillsComponent,
-    GridSectionComponent,
-    SkillsComponent,
-    LatestComponent,
+    OfferComponent,
+    OfferComponent,
+    MobileAppsComponent,
+    LandingComponent,
+    FooterComponent,
+    AboutComponent,
+    QuoteComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
     FontAwesomeModule,
   ],
   providers: [],

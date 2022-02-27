@@ -5,9 +5,80 @@
 @import './src/app/shared/theme/colors';
 @import './src/app/shared/theme/buttons';
 
+$pill-height: 40px;
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
 body {
   background: black;
   color: white;
   margin: 0;
   font-family: Inter, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+p {
+  font-size: 18px;
+}
+.app-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+}
+a {
+  color: $primary-color;
+}
+.w-auto {
+  width: auto;
+}
+.pill {
+  display: flex;
+  height: $pill-height;
+  .pill-title {
+    margin-right: 22px;
+    align-self: center;
+  }
+  .pill-icon {
+    display: flex;
+    justify-content: center;
+    width: $pill-height;
+    height: $pill-height;
+    border-radius: 50%;
+    font-size: 20px;
+    &.secondary {
+      @include background-opacity($secondary-color);
+      fa-icon {
+        margin: auto;
+        color: $secondary-color;
+      }
+    }
+    &.third {
+      @include background-opacity($third-color);
+      fa-icon {
+        margin: auto;
+        color: $third-color;
+      }
+    }
+  }
+}
+.badge {
+  padding: 8px 16px;
+  @include background-opacity($primary-color);
+  color: $primary-color;
+  border-radius: 26px;
+  width: fit-content;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  &.secondary {
+    @include background-opacity($secondary-color);
+    color: $secondary-color;
+  }
+  &.third {
+    @include background-opacity($third-color);
+    color: $third-color;
+  }
 }
