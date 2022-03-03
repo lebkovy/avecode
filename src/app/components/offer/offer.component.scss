@@ -1,0 +1,29 @@
+@import 'src/app/shared/theme/colors';
+@import 'src/app/shared/theme/media';
+
+.col-left {
+  display: flex;
+  .pill-title {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .col-left {
+    margin-bottom: 32px;
+  }
+  .pill {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-left {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 48px;
+  }
+  .pill-title {
+    text-align: right;
+  }
+}

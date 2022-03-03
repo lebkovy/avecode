@@ -1,0 +1,36 @@
+<div class="row no-gutters">
+    <div class="row col-12 col-lg-6 col-left">
+        <div *ngFor="let pill of pills" class="pill pill-lg">
+            <div class="pill-title">{{pill.label | titlecase}}</div>
+            <div class="pill-icon secondary">
+                <fa-icon [icon]="pill.icon"></fa-icon>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="label primary">My Offer</div>
+        <div class="header">How can I help You?</div>
+        <p>I'm fond of designing and creating modern web applications. I always push my limits and do my best to create
+            products that content my client as much as possible.</p>
+        <h4>Creating and supporting modern web applications</h4>
+        <p>
+            I combine my graphic skills with the programming one and that's work pretty well in developing my sets in
+            front-end development.
+            Always tend I to search for new challenges, both learn new technologies and polish current abilities and
+            ways of programming.
+        </p>
+        <h4>Coding native mobile apps both for Android and iOS</h4>
+        <p>
+            Recently I've been learning creating mobile apps with Flutter. I found it quite challenging but still worth
+            getting to know more and more about this Google's framework.
+            I always wanted to have an ability to develop mobile app because nowadays they are gaining popularity and
+            seems to become unnecessary part of our future lives.
+        </p>
+        <a href="mailto:lebiedzinski.jakub.maciej@gmail.com">
+            <button class="btn btn-primary btn-icon mt-4">
+            Contact Me
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+            </button>
+        </a>
+    </div>
+</div>

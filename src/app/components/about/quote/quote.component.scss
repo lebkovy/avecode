@@ -1,0 +1,27 @@
+$recommendPhotoSize: 60px;
+
+.quote {
+  width: 275px;
+  margin: 72px auto;
+  .photo {
+    width: $recommendPhotoSize;
+    height: $recommendPhotoSize;
+  }
+  p {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .position {
+    font-size: 12px;
+    color: grey;
+  }
+  fa-icon {
+    align-self: center;
+    font-size: 48px;
+    opacity: 10%;
+  }
+}

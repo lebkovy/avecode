@@ -1,0 +1,31 @@
+@import 'src/app/shared/theme/colors';
+@import 'src/app/shared/theme/media';
+
+.tool-logo {
+  height: 35px;
+  margin-right: 24px;
+}
+
+.latest {
+  display: block;
+  margin: 0 auto;
+}
+
+.link-href {
+  text-decoration: none;
+
+  .btn-store:hover {
+    border-color: $android-color;
+  }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .latest {
+    max-width: 100%;
+    margin-bottom: 72px;
+  }
+  .row-section {
+    flex-direction: column-reverse;
+  }
+}

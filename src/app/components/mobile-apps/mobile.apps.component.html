@@ -1,0 +1,65 @@
+<div class="row row-section no-gutters justify-content-between">
+    <div class="col-12 col-lg-6">
+        <div class="label primary">Mobile Apps</div>
+        <p>My mobile applications are developed with Google's framework called <span><a href="https://flutter.dev/"
+                                                                                        target="_blank">Flutter</a></span>
+            which is a cross-platform
+            framework that allows me develop apps both on Android and iOS systems. It uses <span><a
+                    href="https://dart.dev/" target="_blank">Dart</a></span> language that is very
+            fast and client-optimized for mobile apps.
+        </p>
+        <p class="mb-4">
+            My apps often based on functions provided by <span><a href="https://firebase.google.com/" target="_blank">Firebase</a></span>
+            which includes several very useful modules for
+            developing apps.
+        </p>
+        <img src="assets/images/logos/firebase_logo.svg" alt="firebase_logo" class="tool-logo">
+        <img src="assets/images/logos/flutter_logo.svg" alt="firebase_logo" class="tool-logo">
+        <div class="label third mt-5">Latest project</div>
+        <p>iValut is an application that allows you to calculate your gains or losses on currency operations. An
+            algorithm compares the current exchange rate of a given currency and calculates the difference of your
+            balance. If the balance is positive, you have gained the calculated amount - if not, you have lost the
+            indicated amount.
+        </p>
+        <div class="row my-4 no-gutters">
+            <div *ngFor="let pill of pills" class="col-6 pill pill-sm">
+                <div class="pill-icon third sm">
+                    <fa-icon [icon]="pill.icon"></fa-icon>
+                </div>
+                <div class="pill-title">{{pill.label | titlecase}}</div>
+            </div>
+        </div>
+        <a [href]="link" target="_blank" class="link-href">
+            <button class="btn btn-store">
+                <img src="assets/images/logos/android.svg" alt="android" class="logo">
+                <span class="d-flex flex-column">
+                <div class="heading">Download for</div>
+                <div class="platform">Android</div>
+            </span>
+            </button>
+        </a>
+    </div>
+    <div class="col-12 col-lg-6">
+        <img src="assets/images/mockups/latest.png" alt="latest" class="latest">
+    </div>
+</div>
+
+
+<!--<grid-section-->
+<!--        heading="Latest project"-->
+<!--        title="iVault"-->
+<!--&gt;-->
+<!--    <div text>-->
+<!--        <p>-->
+<!--            iValut is an application that allows you to calculate your gains or losses on currency operations. An-->
+<!--            algorithm-->
+<!--            compares the current exchange rate of a given currency and calculates the difference of your balance. If the-->
+<!--            balance is positive, you have gained the calculated amount - if not, you have lost the indicated amount.-->
+<!--        </p>-->
+<!--        <pills [pills]="pills"></pills>-->
+<!--    </div>-->
+<!--    <div class="row my-4" buttons>-->
+<!--        <button class="btn btn-primary btn-lg mx-2">Learn more</button>-->
+
+<!--    </div>-->
+<!--</grid-section>-->

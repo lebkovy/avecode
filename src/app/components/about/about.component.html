@@ -1,0 +1,37 @@
+<div class="row no-gutters">
+    <div class="col-12 col-lg-6">
+        <div class="photo-container">
+            <img src="assets/images/me.svg" alt="me" class="me">
+        </div>
+        <quote *ngFor="let quote of quotes"
+               [quote]="quote"
+        ></quote>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="label secondary">About</div>
+        <div class="header">Hello, I'm Jakub</div>
+        <p>
+            I am the Polish-Japanese Academy of Information Technology in Gdansk graduate at the Faculty of Computer
+            Science with a specialization in web applications. I have always been passionate about the operation of the
+            world in terms of IT, how is everything going on? How is it constructed? I started as a computer graphic
+            with a small episode of the video editor until I finally went to study IT to start something "serious" which
+            in the future will allow for interesting earnings.
+        </p>
+        <p>
+            My other passion is traveling, I do not remember the holidays without traveling abroad. I have already
+            visited all the countries of the Balkans, Spain, France, and Italy several times, every country of Benelux,
+            North Africa, twice the country of the four seas - Israel, Turkey, the Baltic countries and, for dessert,
+            China. In the near future, I would like to go to South Africa, the USA, the UK, and my life is the Caribbean
+            Islands with Jamaica at the forefront.
+        </p>
+        <p>
+            In my life, I try to prove that passion for travel and IT can go hand in hand. Every time I pack my computer
+            and program in different parts of the globe. Is not it beautiful when you write the next line of code
+            looking at the Chinese Wall, the Dead Sea or the Cote d'Azur? I recommend this view to everyone!
+        </p>
+        <div class="label mt-5 mb-4">My Goals</div>
+        <div class="badges">
+            <div *ngFor="let goal of goals" class="badge secondary">{{goal | titlecase}}</div>
+        </div>
+    </div>
+</div>

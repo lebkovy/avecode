@@ -1,0 +1,28 @@
+@import 'src/app/shared/theme/colors';
+@import 'src/app/shared/theme/media';
+
+$gap: 8px;
+
+.photo-container {
+  padding: 18px;
+  border-radius: 50%;
+  border: 3px solid $third-color;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  .me {
+    width: 380px;
+  }
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: calc(#{$gap} * 2);
+  column-gap: $gap;
+}
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .me {
+    max-width: 100%;
+  }
+}
