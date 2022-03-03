@@ -1,13 +1,13 @@
-<div class="row no-gutters justify-content-between">
-    <div class="col-4 col-left">
-        <div *ngFor="let pill of pills" class="pill">
+<div class="row no-gutters">
+    <div class="row col-12 col-lg-6 col-left">
+        <div *ngFor="let pill of pills" class="pill pill-lg">
             <div class="pill-title">{{pill.label | titlecase}}</div>
             <div class="pill-icon secondary">
                 <fa-icon [icon]="pill.icon"></fa-icon>
             </div>
         </div>
     </div>
-    <div class="col-6">
+    <div class="col-12 col-lg-6">
         <div class="label primary">My Offer</div>
         <div class="header">How can I help You?</div>
         <p>I'm fond of designing and creating modern web applications. I always push my limits and do my best to create

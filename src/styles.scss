@@ -5,7 +5,8 @@
 @import './src/app/shared/theme/colors';
 @import './src/app/shared/theme/buttons';
 
-$pill-height: 40px;
+$pill-size-lg: 70px;
+$pill-size-sm: 40px;
 
 @mixin background-opacity($color, $opacity: 0.3) {
   background: $color;
@@ -20,50 +21,92 @@ body {
   font-size: 18px;
   overflow-x: hidden;
 }
+
 p {
   font-size: 18px;
 }
+
 .app-icon {
   height: 50px;
   width: 50px;
   border-radius: 12px;
 }
+
 a {
   color: $primary-color;
 }
+
 .w-auto {
   width: auto;
 }
+
 .pill {
   display: flex;
-  height: $pill-height;
+
   .pill-title {
-    margin-right: 22px;
+    margin: 0 18px;
     align-self: center;
   }
+
   .pill-icon {
     display: flex;
     justify-content: center;
-    width: $pill-height;
-    height: $pill-height;
     border-radius: 50%;
-    font-size: 20px;
+
     &.secondary {
       @include background-opacity($secondary-color);
+
       fa-icon {
         margin: auto;
         color: $secondary-color;
       }
     }
+
     &.third {
       @include background-opacity($third-color);
+
       fa-icon {
         margin: auto;
         color: $third-color;
       }
     }
   }
+
+  &.pill-sm {
+    .pill-icon {
+      min-width: $pill-size-sm;
+      min-height: $pill-size-sm;
+      width: $pill-size-sm;
+      height: $pill-size-sm;
+
+      fa-icon {
+        font-size: calc(#{$pill-size-sm} / 2);
+      }
+    }
+
+    .pill-title {
+      font-size: 14px;
+    }
+  }
+
+  &.pill-lg {
+    .pill-icon {
+      min-width: $pill-size-lg;
+      min-height: $pill-size-lg;
+      height: $pill-size-lg;
+      width: $pill-size-lg;
+    }
+
+    fa-icon {
+      font-size: calc(#{$pill-size-lg} / 2);
+    }
+
+    .pill-title {
+      font-size: 24px;
+    }
+  }
 }
+
 .badge {
   padding: 8px 16px;
   @include background-opacity($primary-color);
@@ -73,12 +116,44 @@ a {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
+
   &.secondary {
     @include background-opacity($secondary-color);
     color: $secondary-color;
   }
+
   &.third {
     @include background-opacity($third-color);
     color: $third-color;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .pill {
+    height: $pill-size-sm;
+    width: 50%;
+    margin-bottom: 20px;
+
+    &.pill-lg, &.pill-sm {
+      .pill-title {
+        font-size: 14px;
+      }
+      .pill-icon {
+        min-width: $pill-size-sm;
+        min-height: $pill-size-sm;
+        height: $pill-size-sm;
+        width: $pill-size-sm;
+        fa-icon {
+          font-size: calc(#{$pill-size-sm} / 2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pill {
+    justify-content: flex-end;
+    margin-bottom: 18px;
   }
 }

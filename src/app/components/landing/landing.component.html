@@ -1,6 +1,5 @@
-<img src="assets/images/wave.svg" alt="wave" class="wave">
-<div class="wrapper">
-    <img src="assets/images/mockups/landing.svg" alt="image" class="image">
+<div class="desktop">
+    <img src="assets/images/mockups/landing.png" alt="image" class="image">
     <div class="heading">
         <div class="header">Hello<br />World!</div>
         <div class="subheader">Need app? I got You.<br />Check my offer below.</div>
@@ -9,5 +8,16 @@
                 <fa-icon [icon]="faArrowRight"></fa-icon>
         </button>
     </div>
+</div>
+<div class="mobile">
+    <div class="heading">
+        <div class="header">Hello<br />World!</div>
+        <div class="subheader">Need app? I got You.<br />Check my offer below.</div>
+    </div>
+    <img src="assets/images/mockups/landing_mobile.png" alt="image" class="image">
+    <button (click)="scrollTo('offer')" class="btn btn-primary btn-icon">
+        Check
+        <fa-icon [icon]="faArrowRight"></fa-icon>
+    </button>
 </div>
 

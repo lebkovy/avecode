@@ -10,11 +10,14 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.link, .credits p {
+.link, .row-credits p {
   text-decoration: none;
   color: grey;
   cursor: pointer;
 }
-.credits {
-  margin-bottom: $margin;
+.row-credits {
+  justify-content: space-between;
+  p {
+    width: fit-content;
+  }
 }

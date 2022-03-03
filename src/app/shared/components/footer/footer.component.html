@@ -1,15 +1,15 @@
 <hr>
-<div class="row px-5 py-3">
-    <div *ngFor="let section of sections" class="col-3">
-        <h4 class="mb-5">{{section.label | titlecase}}</h4>
-        <div class="link my-md-3" *ngFor="let item of section.items"
+<div class="row">
+    <div *ngFor="let section of sections" class="col-12 col-lg-3">
+        <h4 class="mb-3">{{section.label | titlecase}}</h4>
+        <div class="link my-3" *ngFor="let item of section.items"
            (click)="navigateTo(item)">
             {{item.label}}
         </div>
     </div>
 </div>
 <hr>
-<div class="credits d-flex justify-content-between">
+<div class="row row-credits">
     <p>Copyright © Jakub Lebiedziński {{year}}. All Rights Reserved </p>
     <p>Privacy | Cookies | Legal</p>
 </div>

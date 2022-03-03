@@ -1,5 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {faArrowRight,faBars } from "@fortawesome/free-solid-svg-icons";
 import {NavigationService} from "../../shared/services/navigation.service";
 
 @Component({
@@ -9,6 +9,7 @@ import {NavigationService} from "../../shared/services/navigation.service";
 })
 export class LandingComponent implements OnInit {
   faArrowRight = faArrowRight;
+  faBars = faBars;
   scrollOn = false;
   backgroundSize: number = 100;
   prev: number = 0;

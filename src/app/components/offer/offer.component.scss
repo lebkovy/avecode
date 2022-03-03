@@ -1,31 +1,29 @@
 @import 'src/app/shared/theme/colors';
-
-$pill-size: 72px;
+@import 'src/app/shared/theme/media';
 
 .col-left {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  fa-icon {
-    font-size: 35px;
+  .pill-title {
+    font-weight: bold;
   }
+}
 
-  .pill {
-    height: $pill-size;
-    justify-content: flex-end;
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .col-left {
     margin-bottom: 32px;
   }
-
-  .pill-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 22px;
-    align-self: center;
+  .pill {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
-
-  .pill-icon {
-    height: $pill-size;
-    width: $pill-size;
+}
+@media screen and (min-width: 992px) {
+  .col-left {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 48px;
+  }
+  .pill-title {
+    text-align: right;
   }
 }

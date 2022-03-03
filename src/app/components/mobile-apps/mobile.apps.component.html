@@ -1,5 +1,5 @@
-<div class="row no-gutters justify-content-between">
-    <div class="col-6">
+<div class="row row-section no-gutters justify-content-between">
+    <div class="col-12 col-lg-6">
         <div class="label primary">Mobile Apps</div>
         <p>My mobile applications are developed with Google's framework called <span><a href="https://flutter.dev/"
                                                                                         target="_blank">Flutter</a></span>
@@ -22,15 +22,15 @@
             indicated amount.
         </p>
         <div class="row my-4 no-gutters">
-            <div *ngFor="let pill of pills" class="col-6 pill">
-                <div class="pill-icon third">
+            <div *ngFor="let pill of pills" class="col-6 pill pill-sm">
+                <div class="pill-icon third sm">
                     <fa-icon [icon]="pill.icon"></fa-icon>
                 </div>
                 <div class="pill-title">{{pill.label | titlecase}}</div>
             </div>
         </div>
         <a [href]="link" target="_blank" class="link-href">
-            <button class="btn btn-store btn-lg">
+            <button class="btn btn-store">
                 <img src="assets/images/logos/android.svg" alt="android" class="logo">
                 <span class="d-flex flex-column">
                 <div class="heading">Download for</div>
@@ -39,8 +39,8 @@
             </button>
         </a>
     </div>
-    <div class="col-6">
-        <img src="assets/images/mockups/latest.svg" alt="latest" class="latest">
+    <div class="col-12 col-lg-6">
+        <img src="assets/images/mockups/latest.png" alt="latest" class="latest">
     </div>
 </div>
 
