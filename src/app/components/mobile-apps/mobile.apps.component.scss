@@ -18,6 +18,9 @@
     border-color: $android-color;
   }
 }
+.pill {
+  justify-content: flex-start;
+}
 
 
 @media screen and (min-width: 300px) and (max-width: $desktop-width) {
