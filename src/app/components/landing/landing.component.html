@@ -1,4 +1,4 @@
-<div class="desktop">
+<div class="desktop" [style.background-image]="'url('+waveDesktop+')'">
     <img src="assets/images/mockups/landing.png" alt="image" class="image">
     <div class="heading">
         <div class="header">Hello<br />World!</div>
@@ -9,10 +9,10 @@
         </button>
     </div>
 </div>
-<div class="mobile">
+<div class="mobile" [style.background-image]="'url('+waveMobile+')'">
     <div class="heading">
-        <div class="header">Hello<br />World!</div>
-        <div class="subheader">Need app? I got You.<br />Check my offer below.</div>
+        <div class="header">Hello World!</div>
+        <div class="subheader">Need app? I got You. Check my offer below.</div>
     </div>
     <img src="assets/images/mockups/landing_mobile.png" alt="image" class="image">
     <button (click)="scrollTo('offer')" class="btn btn-primary btn-icon">

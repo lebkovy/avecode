@@ -13,6 +13,8 @@ export class LandingComponent implements OnInit {
   scrollOn = false;
   backgroundSize: number = 100;
   prev: number = 0;
+  waveDesktop = 'assets/images/wave_desktop.svg';
+  waveMobile = 'assets/images/wave_mobile.svg'
 
   constructor(private navigationService: NavigationService) { }
 
