@@ -51,7 +51,7 @@ export class FooterComponent {
         {
             label: 'Contact', items: [
                 {label: 'lebiedzinski.jakub.maciej@gmail.com', link: 'mailto:lebiedzinski.jakub.maciej@gmail.com'},
-                {label: 'Resume', link: '../../../../assets/docs/resume.pdf'},
+                {label: 'Resume', link: 'assets/docs/resume.pdf'},
             ]
         }
     ]
