@@ -1,4 +1,5 @@
 @import '~src/app/shared/theme/colors';
+@import '~src/app/shared/theme/media';
 
 .navbar {
   display: flex;
@@ -26,5 +27,11 @@
     &.active {
       border-color: $primary-color;
     }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .navbar {
+    display: none;
   }
 }
