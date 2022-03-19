@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {faSearchDollar, faHandHoldingUsd, faLandmark, faPiggyBank} from '@fortawesome/free-solid-svg-icons';
-import {IPill} from "../../shared/model/pill";
+import {LatestService} from 'src/app/shared/services/latest.service';
 
 @Component({
     selector: 'mobile-apps',
@@ -8,11 +7,14 @@ import {IPill} from "../../shared/model/pill";
     styleUrls: ['./mobile.apps.component.scss']
 })
 export class MobileAppsComponent {
-    pills: IPill[] = [
-        {label: 'Choose Currency', icon: faSearchDollar},
-        {label: 'Provide Operations', icon: faHandHoldingUsd},
-        {label: 'Store History', icon: faLandmark},
-        {label: 'Monitor Savings', icon: faPiggyBank},
-    ];
-    link = 'https://play.google.com/store/apps/details?id=com.lebkovy.ivault';
+    constructor(private latestService: LatestService) {
+    }
+
+    get pills() {
+        return this.latestService.pills;
+    }
+
+    get link() {
+        return this.latestService.androidLink;
+    }
 }

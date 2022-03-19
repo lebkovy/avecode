@@ -12,7 +12,7 @@ h3 {
 }
 
 p {
-  color: hsla(0,0%,100%,.8);
+  color: hsla(0, 0, 100%, .8);
   line-height: 26px;
   font-size: 16px;
   font-weight: 400;
@@ -40,6 +40,9 @@ p {
 }
 
 @media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  h1 {
+    font-size: 48px;
+  }
   .header {
     font-size: 24px;
   }
@@ -48,6 +51,9 @@ p {
   }
 }
 @media screen and (min-width: $desktop-width) {
+  h1 {
+    font-size: 72px;
+  }
   .header {
     font-size: 48px;
   }

@@ -1,16 +1,1 @@
-@import 'src/app/shared/theme/media';
 
-.app-container {
-  padding: 0 10%;
-}
-
-@media screen and (min-width: 300px) and (max-width: $desktop-width) {
-  .divider {
-    height: 50px;
-  }
-}
-@media screen and (min-width: $desktop-width) {
-  .divider {
-    height: 150px;
-  }
-}
