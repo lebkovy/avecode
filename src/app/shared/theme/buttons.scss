@@ -12,11 +12,21 @@ $store-logo-size: 32px;
   font-weight: 600;
   width: fit-content;
   max-height: 60px;
+  &.btn-sm {
+    padding: 10px 12px;
+  }
   &.btn-primary {
     background-color: $primary-color;
     transition: .2s;
     &:hover {
       background-color: $primary-color-darker;
+    }
+  }
+  &.btn-secondary{
+    background-color: $secondary-color;
+    transition: .2s;
+    &:hover {
+      background-color: $secondary-color-darker;
     }
   }
   &.btn-icon {
@@ -71,7 +81,7 @@ $store-logo-size: 32px;
 }
 @media screen and (min-width: $desktop-width) {
   .btn {
-    padding: 16px 24px;
+    padding: 16px 32px;
     font-size: 16px;
     &.btn-lg {
       font-size: 18px;

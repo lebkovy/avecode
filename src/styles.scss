@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+.app-container {
+  padding: 0 10%;
+}
+
 p {
   font-size: 18px;
 }
@@ -129,6 +133,9 @@ a {
 }
 
 @media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .divider {
+    height: 50px;
+  }
   .pill {
     height: $pill-size-sm;
     width: 50%;
@@ -151,9 +158,12 @@ a {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $desktop-width) {
   .pill {
     justify-content: flex-end;
     margin-bottom: 18px;
+  }
+  .divider {
+    height: 150px;
   }
 }
