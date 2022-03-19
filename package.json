@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href \"https://lebkovy.github.io/Portfolio/\""
+    "deploy": "ng build --base-href /Portfolio/"
   },
   "private": true,
   "dependencies": {
