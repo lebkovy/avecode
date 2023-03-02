@@ -33,9 +33,9 @@ export class FooterComponent {
             ]
         },
         {
-            label: 'Resource', items: [
-                {label: 'Angular', link: 'https://angular.io'},
+            label: 'Resources', items: [
                 {label: 'Flutter', link: 'https://flutter.dev'},
+                {label: 'Angular', link: 'https://angular.io'},
                 {label: 'Firebase', link: 'https://firebase.google.com'},
                 {label: 'NodeJS', link: 'https://nodejs.org'}
             ]
@@ -51,6 +51,7 @@ export class FooterComponent {
         {
             label: 'Contact', items: [
                 {label: 'lebiedzinski.jakub.maciej@gmail.com', link: 'mailto:lebiedzinski.jakub.maciej@gmail.com'},
+                {label: 'CliftonStrengths 34 Report', link: 'assets/docs/CliftonStrengths.pdf'},
                 {label: 'Resume', link: 'assets/docs/resume.pdf'},
             ]
         }
