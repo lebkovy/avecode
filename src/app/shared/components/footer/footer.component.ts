@@ -45,7 +45,7 @@ export class FooterComponent {
                 {label: 'GitHub', link: 'https://github.com/lebkovy'},
                 {label: 'LinkedIn', link: 'https://linkedin.com/in/lebkovy'},
                 {label: 'Facebook', link: 'https://fb.com/graphlocks'},
-                {label: 'Google Play', link: 'https://play.google.com/store/apps/developer?id=lebkovy'}
+                {label: 'Google Play', link: 'https://play.google.com/store/apps/dev?id=5506221675350182536'}
             ]
         },
         {
