@@ -65,20 +65,27 @@
     position: absolute;
     top: 54px;
     left: 54px;
-    width: 55%;
+    width: 50%;
   }
-  .heading {
-    width: 30%;
-    padding: 10% 0;
-    margin-left: auto;
-
-    .header {
-      font-size: 72px;
+  .logo-vector {
+      height: 200px;
+      align-self: center;
+      margin-right: 48px;
+      padding-right: 48px;
+      border-right: 1px solid lightgrey;
     }
+    .heading {
+      width: 50%;
+      padding: 10% 0;
+      margin-left: auto;
 
-    .subheader {
-      font-size: 32px;
-      margin: 24px 0;
-    }
+      .header {
+        font-size: 48px;
+      }
+
+      .subheader {
+        font-size: 24px;
+        margin: 24px 0;
+      }
   }
 }

@@ -1,5 +1,7 @@
 <div (scroll)="onWindowScroll();" class="navbar" id="navbar" [ngClass]="{'color': !(transparentNavbar$ | async)}">
-    <div class="empty"></div>
+    <a href="#" class="empty">
+        <img src="assets/images/symbol.svg" alt="symbol" class="symbol">
+    </a>
     <div class="items">
         <div *ngFor="let item of navItems; let i = index"
              (click)="scrollTo(item.anchor)"
@@ -9,5 +11,5 @@
             {{item.label | titlecase}}
         </div>
     </div>
-    <button routerLink="latest" class="btn btn-secondary btn-sm my-auto">Latest App</button>
+    <button routerLink="latest" class="btn btn-primary btn-sm my-auto">Latest App</button>
 </div>

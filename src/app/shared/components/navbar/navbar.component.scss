@@ -1,5 +1,5 @@
-@import '~src/app/shared/theme/colors';
-@import '~src/app/shared/theme/media';
+@import 'src/app/shared/theme/media';
+@import 'src/app/shared/theme/colors';
 
 .navbar {
   display: flex;
@@ -12,6 +12,14 @@
   transition: all .3s;
   .items {
     display: flex;
+  }
+  .empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .symbol {
+      height: 40px;
+    }
   }
   .btn, .empty {
     width: 120px;

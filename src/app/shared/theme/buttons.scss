@@ -29,6 +29,13 @@ $store-logo-size: 32px;
       background-color: $secondary-color-darker;
     }
   }
+  &.btn-third{
+    background-color: $third-color;
+    transition: .2s;
+    &:hover {
+      background-color: $third-color-darker;
+    }
+  }
   &.btn-icon {
     svg {
       margin-left: 12px;

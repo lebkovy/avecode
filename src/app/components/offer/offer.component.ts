@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {faArrowRight,faDesktop, faMobileAlt, faPaintBrush, faWrench} from "@fortawesome/free-solid-svg-icons";
 import {IPill} from "../../shared/model/pill";
+import { contactMail } from "../../shared/constants";
 
 @Component({
   selector: 'offer',
@@ -9,6 +10,7 @@ import {IPill} from "../../shared/model/pill";
 })
 export class OfferComponent {
   faArrowRight = faArrowRight;
+  contactMail = contactMail;
   pills: IPill[] = [
     { label: 'Web Development', icon: faDesktop },
     { label: 'Mobile Applications', icon: faMobileAlt },
