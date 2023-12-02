@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavigationService} from "../../services/navigation.service";
+import {contactMail} from "../../constants";
 
 interface IItem {
     label: string;
@@ -50,7 +51,7 @@ export class FooterComponent {
         },
         {
             label: 'Contact', items: [
-                {label: 'lebiedzinski.jakub.maciej@gmail.com', link: 'mailto:lebiedzinski.jakub.maciej@gmail.com'},
+                {label: contactMail, link: `mailto:${contactMail}`},
                 {label: 'CliftonStrengths 34 Report', link: 'assets/docs/CliftonStrengths.pdf'},
                 {label: 'Resume', link: 'assets/docs/resume.pdf'},
             ]

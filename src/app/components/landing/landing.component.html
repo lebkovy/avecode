@@ -1,12 +1,17 @@
 <div class="desktop" [style.background-image]="'url('+waveDesktop+')'">
     <img src="assets/images/mockups/landing.png" alt="image" class="image">
     <div class="heading">
-        <div class="header">Hello<br />World!</div>
-        <div class="subheader">Need an app? I got You.<br />Check my offer below.</div>
-        <button (click)="scrollTo('offer')" class="btn btn-primary btn-icon">
-                Check
-                <fa-icon [icon]="faArrowRight"></fa-icon>
-        </button>
+        <div class="d-flex justify-content-center">
+            <img src="assets/images/logo.svg" alt="" class="logo-vector">
+            <div class="d-flex flex-column">
+                <div class="header">Hello<br />World!</div>
+                <div class="subheader">Need an app? I got You.<br />Check my offer below.</div>
+                <button (click)="scrollTo('offer')" class="btn btn-third btn-icon">
+                    Check
+                    <fa-icon [icon]="faArrowRight"></fa-icon>
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 <div class="mobile" [style.background-image]="'url('+waveMobile+')'">
@@ -15,7 +20,7 @@
         <div class="subheader">Need app? I got You. Check my offer below.</div>
     </div>
     <img src="assets/images/mockups/landing_mobile.png" alt="image" class="image">
-    <button (click)="scrollTo('offer')" class="btn btn-primary btn-icon">
+    <button (click)="scrollTo('offer')" class="btn btn-third btn-icon">
         Check
         <fa-icon [icon]="faArrowRight"></fa-icon>
     </button>
