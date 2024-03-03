@@ -22,6 +22,11 @@ body {
   overflow-x: hidden;
 }
 
+.no-gutters {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
 .app-container {
   padding: 0 10%;
   margin-top: -1px;
