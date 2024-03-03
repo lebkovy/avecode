@@ -9,15 +9,13 @@ import {MobileAppsComponent} from './components/mobile-apps/mobile.apps.componen
 import {LandingComponent} from './components/landing/landing.component';
 import {FooterComponent} from './shared/components/footer/footer.component';
 import {AboutComponent} from './components/about/about.component';
-import {QuoteComponent} from './components/about/quote/quote.component';
-import {LatestAppComponent} from './components/latest-app/latest-app.component';
+import {QuoteComponent} from './shared/components/quote/quote.component';
 import {HomeComponent} from './components/home/home.component';
 import {Route, RouterModule} from "@angular/router";
 
 const routes: Route[] = [
-    { path: '', component: HomeComponent},
-    { path: 'latest', component: LatestAppComponent },
-    { path: '**', redirectTo: ''}
+    {path: '', component: HomeComponent},
+    {path: '**', redirectTo: ''}
 ]
 
 @NgModule({
@@ -31,7 +29,6 @@ const routes: Route[] = [
         FooterComponent,
         AboutComponent,
         QuoteComponent,
-        LatestAppComponent,
         HomeComponent,
     ],
     imports: [

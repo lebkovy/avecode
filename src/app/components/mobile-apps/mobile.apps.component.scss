@@ -1,13 +1,7 @@
 @import 'src/app/shared/theme/colors';
 @import 'src/app/shared/theme/media';
 
-.tool-logo {
-  height: 35px;
-  margin-right: 24px;
-}
-
 .latest {
-  display: block;
   margin: 0 auto;
 }
 
@@ -15,10 +9,12 @@
   text-decoration: none;
   margin-left: 12px;
 
-  .btn-store:hover {
+  .android:hover {
     border-color: $android-color;
+    transition: .2s;
   }
 }
+
 .pill {
   justify-content: flex-start;
 }
@@ -31,5 +27,19 @@
   }
   .row-section {
     flex-direction: column-reverse;
+  }
+  .tool-logo {
+    height: 25px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .latest {
+    max-width: 100%;
+  }
+  .tool-logo {
+    height: 35px;
+    margin-right: 24px;
   }
 }

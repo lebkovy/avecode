@@ -1,18 +1,22 @@
-<div class="app-container">
-    <hr>
-    <div class="row">
+<div class="app-container bg-dark">
+    <div class="row row-columns">
         <div *ngFor="let section of sections" class="col-12 col-lg-3">
-            <h4 class="mb-3">{{section.label | titlecase}}</h4>
-            <div class="link my-3" *ngFor="let item of section.items"
-                 (click)="navigateTo(item)">
-                {{item.label}}
-            </div>
+            <div class="header mb-3">{{ section.label | titlecase }}</div>
+            <p class="my-2" *ngFor="let item of section.items"
+               (click)="navigateTo(item)">
+                {{ item.label }}
+            </p>
+            <a *ngIf="!section.label.length" href="mailto:{{contactMail}}">
+                <button class="btn btn-primary btn-icon btn-sm mt-4">
+                    Contact Me
+                    <fa-icon [icon]="faArrowRight"></fa-icon>
+                </button>
+            </a>
         </div>
     </div>
-    <hr>
     <div class="row row-credits">
-        <p>Copyright © Elliot Labs {{year}}. All Rights Reserved </p>
+        <p>Copyright © avecode {{ year }}. All Rights Reserved </p>
         <!--    <p>Privacy | Cookies | Legal</p>-->
     </div>
-
 </div>
+
