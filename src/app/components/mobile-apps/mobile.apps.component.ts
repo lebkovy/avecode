@@ -14,7 +14,19 @@ export class MobileAppsComponent {
         return this.latestService.pills;
     }
 
-    get link() {
+    get androidLink() {
         return this.latestService.androidLink;
+    }
+
+    get title() {
+        return this.latestService.title;
+    }
+
+    get subtitle() {
+        return this.latestService.subtitle;
+    }
+
+    get description() {
+        return this.latestService.description;
     }
 }

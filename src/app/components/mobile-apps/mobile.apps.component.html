@@ -1,43 +1,59 @@
-<div class="row row-section no-gutters justify-content-between">
-    <div class="col-12 col-lg-6">
-        <div class="label primary">Mobile Apps</div>
-        <p>My mobile applications are developed with Google's framework called <span><a href="https://flutter.dev/"
-                                                                                        target="_blank">Flutter</a></span>
-            which is a cross-platform
-            framework that allows me develop apps both on Android and iOS systems. It uses <span><a
-                    href="https://dart.dev/" target="_blank">Dart</a></span> language that is very
-            fast and client-optimized for mobile apps.
-        </p>
-        <p class="mb-4">
-            My apps often based on functions provided by <span><a href="https://firebase.google.com/" target="_blank">Firebase</a></span>
-            which includes several very useful modules for
-            developing apps.
-        </p>
-        <img src="assets/images/logos/firebase_logo.svg" alt="firebase_logo" class="tool-logo">
-        <img src="assets/images/logos/flutter_logo.svg" alt="firebase_logo" class="tool-logo">
-        <div class="label secondary mt-5">Latest project</div>
-        <div class="row my-4 no-gutters">
-            <div *ngFor="let pill of pills" class="col-6 pill pill-sm">
-                <div class="pill-icon secondary sm">
-                    <fa-icon [icon]="pill.icon"></fa-icon>
-                </div>
-                <div class="pill-title">{{pill.label | titlecase}}</div>
-            </div>
+<div class="row row-section app-container bg-light no-gutters">
+    <div class="col-12 col-lg-6 col-image">
+        <img src="assets/images/mockups/latest.png" alt="latest" class="latest">
+    </div>
+    <div class="col-12 col-lg-6 p-0">
+        <div class="col-background bg-light">
+            <div class="header">Mobile Apps</div>
+            <p>
+                My mobile applications are meticulously crafted leveraging Google's innovative <span><a
+                    href="https://flutter.dev/"
+                    target="_blank">Flutter</a></span> framework. This
+                cutting-edge cross-platform tool empowers me to develop versatile applications compatible with both
+                Android
+                and iOS systems, streamlining the process and ensuring maximum reach for my creations.</p>
+            <p>At the heart of Flutter lies the Dart programming language, renowned for its exceptional speed and
+                client-optimised performance specifically tailored for mobile applications. By harnessing the power of
+                Dart,
+                I can ensure that my apps not only run efficiently but also provide users with a seamless and responsive
+                experience, enhancing their overall satisfaction and engagement.</p>
+            <p>In essence, with Flutter and Dart at my disposal, I can bring my creative visions to life while
+                delivering
+                high-quality, high-performance mobile solutions that cater to the diverse needs of modern users across
+                different platforms.</p>
+            <p>My apps often based on functions provided by <span><a href="https://firebase.google.com/"
+                                                                     target="_blank">Firebase</a></span>
+                which includes several very useful modules for
+                developing apps.
+            </p>
+            <img src="assets/images/logos/firebase_logo.svg" alt="firebase_logo" class="tool-logo">
+            <img src="assets/images/logos/flutter_logo.svg" alt="firebase_logo" class="tool-logo">
         </div>
-        <div class="d-flex">
-            <button routerLink="latest" class="btn btn-primary">Read more</button>
-            <a [href]="link" target="_blank" class="link-href">
-                <button class="btn btn-store">
-                    <img src="assets/images/logos/android.svg" alt="android" class="logo">
+    </div>
+    <div class="col-12 col-lg-6 p-0">
+        <div class="col-background bg-light">
+            <div class="label">Latest project</div>
+            <div class="header">{{ title }}</div>
+            <p>
+                {{ description }}
+            </p>
+            <div class="row my-4 no-gutters">
+                <div *ngFor="let pill of pills" class="col-6 pill pill-sm">
+                    <div class="pill-icon secondary sm">
+                        <fa-icon [icon]="pill.icon"></fa-icon>
+                    </div>
+                    <div class="pill-title">{{ pill.label | titlecase }}</div>
+                </div>
+            </div>
+            <a [href]="androidLink" target="_blank" class="link-href">
+                <button class="btn btn-store android">
+                    <img src="assets/images/logos/android_white.svg" alt="android" class="logo">
                     <span class="d-flex flex-column">
-                        <div class="heading">Download for</div>
-                        <div class="platform">Android</div>
-                    </span>
+                                <div class="heading">Download for</div>
+                                <div class="platform">Android</div>
+                            </span>
                 </button>
             </a>
         </div>
-    </div>
-    <div class="col-12 col-lg-6">
-        <img src="assets/images/mockups/latest.png" alt="latest" class="latest">
     </div>
 </div>

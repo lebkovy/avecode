@@ -9,63 +9,86 @@ $store-logo-size: 32px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-weight: 600;
   width: fit-content;
   max-height: 60px;
+  font-size: 21px;
+  font-family: "SF Pro Display Medium", sans-serif;
+
   &.btn-sm {
     padding: 10px 12px;
   }
+
   &.btn-primary {
     background-color: $primary-color;
     transition: .2s;
+
     &:hover {
       background-color: $primary-color-darker;
     }
   }
-  &.btn-secondary{
+
+  &.btn-secondary {
     background-color: $secondary-color;
     transition: .2s;
+
     &:hover {
       background-color: $secondary-color-darker;
     }
   }
-  &.btn-third{
+
+  &.btn-third {
     background-color: $third-color;
     transition: .2s;
+
     &:hover {
       background-color: $third-color-darker;
     }
   }
+
   &.btn-icon {
     svg {
       margin-left: 12px;
       transition: all .3s;
     }
+
     &:hover {
       svg {
         margin-left: 22px;
       }
     }
   }
+
   &.btn-store {
     display: flex;
-    background: transparent;
-    border: 2px solid $dark-color;
+
+    &.android {
+      background: $android-color;
+
+      &:hover {
+        background: $android-color-dark;
+        transition: .2s;
+      }
+    }
+
     span {
       align-self: center;
       margin: 0 12px;
-      .heading, .platform {
-        text-align: left;
-      }
-      .heading {
-        font-weight: 400;
-        color: grey;
-        margin-bottom: 4px;
-      }
     }
+
+    .heading, .platform {
+      text-align: left;
+      color: $light-color;
+    }
+
+    .heading {
+      font-family: "SF Pro Text Semibold", sans-serif;
+      margin-bottom: 2px;
+    }
+
     &:hover {
       border-color: white;
     }
+
     .logo {
       align-self: center;
       width: $store-logo-size;
@@ -73,27 +96,33 @@ $store-logo-size: 32px;
     }
   }
 }
+
 @media screen and (min-width: 300px) and (max-width: $desktop-width) {
   .btn {
     padding: 10px 14px;
     font-size: 14px;
+
     &.btn-lg {
       font-size: 14px;
       padding: 12px 18px;
     }
+
     &.btn-store .heading {
       font-size: 12px;
     }
   }
 }
+
 @media screen and (min-width: $desktop-width) {
   .btn {
     padding: 16px 32px;
     font-size: 16px;
+
     &.btn-lg {
       font-size: 18px;
       padding: 16px 32px;
     }
+
     &.btn-store .heading {
       font-size: 14px;
     }

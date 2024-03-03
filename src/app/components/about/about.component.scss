@@ -3,6 +3,28 @@
 
 $gap: 8px;
 
+.me-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 15%;
+  filter: brightness(50%) grayscale(1);
+  z-index: -1;
+}
+
+.app-container {
+  padding: 10% 10%;
+}
+
+p {
+  color: hsla(0, 0, 100%, .8);
+}
+
+.col-me {
+  width: 220px;
+  z-index: 1;
+}
+
 .photo-container {
   padding: 18px;
   border-radius: 50%;
@@ -10,13 +32,12 @@ $gap: 8px;
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
-  .me {
-    width: 200px;
-  }
 }
+
 .badges {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 48px;
   row-gap: calc(#{$gap} * 2);
   column-gap: $gap;
 }
@@ -24,5 +45,26 @@ $gap: 8px;
 @media screen and (min-width: 300px) and (max-width: $desktop-width) {
   .me {
     max-width: 100%;
+  }
+  .col-me {
+    margin: 20px 0 0 0;
+  }
+  .col-image {
+    padding-top: 48px;
+  }
+  .me-bg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .col-image {
+    padding-left: 5%;
+  }
+  .col-me {
+    margin: 150px -20px 0 0;
+  }
+  .col-background {
+    padding-top: 20%;
   }
 }

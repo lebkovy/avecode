@@ -1,23 +1,46 @@
-$margin: 22px;
+@import 'src/app/shared/theme/media';
 
-hr {
-  height: 1px;
-  margin: $margin 0;
-  background-color: rgba(255,255,255,.1);
-  border: none;
+.row-columns {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, .05);
 }
+
 .col-3 {
   display: flex;
   flex-direction: column;
 }
-.link, .row-credits p {
-  text-decoration: none;
-  color: grey;
-  cursor: pointer;
+
+.header {
+  font-size: 16px;
 }
+
+p {
+  cursor: pointer;
+  font-size: 16px;
+  color: hsla(0, 0, 100%, .8);
+}
+
 .row-credits {
+  padding: 48px 0;
   justify-content: space-between;
+
   p {
     width: fit-content;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .header {
+    margin-top: 32px;
+  }
+  .row-columns {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .row-columns {
+    padding: 72px 0;
   }
 }

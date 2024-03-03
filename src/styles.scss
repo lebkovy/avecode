@@ -1,39 +1,98 @@
-@import '~bootstrap/dist/css/bootstrap-grid.css';
-@import '~@fortawesome/fontawesome-free/css/fontawesome.min.css';
+@import 'node_modules/bootstrap/dist/css/bootstrap-grid.css';
+@import 'node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css';
 
-@import './src/app/shared/theme/typography';
-@import './src/app/shared/theme/colors';
-@import './src/app/shared/theme/buttons';
+@import 'src/app/shared/theme/typography';
+@import 'src/app/shared/theme/colors';
+@import 'src/app/shared/theme/buttons';
 
 $pill-size-lg: 70px;
 $pill-size-sm: 40px;
 
-@mixin background-opacity($color, $opacity: 0.3) {
+@mixin background-opacity($color, $opacity) {
   background: $color;
   background: rgba($color, $opacity);
 }
 
 body {
-  background: black;
-  color: white;
+  background: $light-color;
+  color: $dark-color;
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: "SF Pro Display Regular", sans-serif;
   font-size: 18px;
   overflow-x: hidden;
 }
 
 .app-container {
   padding: 0 10%;
+  margin-top: -1px;
+
+  .col-background {
+    border-radius: 14px;
+    height: max-content;
+
+    &.bg-dark {
+      background-color: #1A1A1C;
+    }
+
+    &.bg-light {
+      background-color: #FBFBFB;
+    }
+  }
+
+  .col-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.waved-top {
+    clip-path: url(#waveTopClipPath);
+  }
+
+  &.waved-bottom {
+    clip-path: url(#waveBottomClipPath);
+  }
+
+  &.bg-dark {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+  &.bg-light {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+.divider {
+  margin-top: -1px;
+
+  &.bg-dark {
+    background-color: $dark-color;
+  }
+
+  &.bg-light {
+    background-color: $light-color;
+  }
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 .app-icon {
   height: 50px;
   width: 50px;
   border-radius: 12px;
+}
+
+.h-0 {
+  height: 0;
 }
 
 a {
@@ -57,21 +116,30 @@ a {
     justify-content: center;
     border-radius: 50%;
 
-    &.secondary {
-      @include background-opacity($secondary-color);
+    &.primary {
+      @include background-opacity($primary-color, .3);
 
       fa-icon {
         margin: auto;
-        color: $secondary-color;
+        color: $light-color;
+      }
+    }
+
+    &.secondary {
+      @include background-opacity($secondary-color, 1);
+
+      fa-icon {
+        margin: auto;
+        color: $light-color;
       }
     }
 
     &.third {
-      @include background-opacity($third-color);
+      @include background-opacity($third-color, .3);
 
       fa-icon {
         margin: auto;
-        color: $third-color;
+        color: $light-color;
       }
     }
   }
@@ -112,22 +180,22 @@ a {
 }
 
 .badge {
-  padding: 8px 16px;
-  @include background-opacity($primary-color);
+  padding: 6px 14px;
+  @include background-opacity($primary-color, .3);
   color: $primary-color;
   border-radius: 26px;
   width: fit-content;
   text-align: center;
-  font-weight: bold;
   font-size: 14px;
+  font-family: "SF Pro Display Semibold", sans-serif;
 
   &.secondary {
-    @include background-opacity($secondary-color);
+    @include background-opacity($secondary-color, .3);
     color: $secondary-color;
   }
 
   &.third {
-    @include background-opacity($third-color);
+    @include background-opacity($third-color, .3);
     color: $third-color;
   }
 }
@@ -135,6 +203,12 @@ a {
 @media screen and (min-width: 300px) and (max-width: $desktop-width) {
   .divider {
     height: 50px;
+  }
+  .col-image img {
+    display: none;
+  }
+  .col-background {
+    padding: 24px;
   }
   .pill {
     height: $pill-size-sm;
@@ -145,11 +219,13 @@ a {
       .pill-title {
         font-size: 14px;
       }
+
       .pill-icon {
         min-width: $pill-size-sm;
         min-height: $pill-size-sm;
         height: $pill-size-sm;
         width: $pill-size-sm;
+
         fa-icon {
           font-size: calc(#{$pill-size-sm} / 2);
         }
@@ -165,5 +241,8 @@ a {
   }
   .divider {
     height: 150px;
+  }
+  .col-background {
+    padding: 72px;
   }
 }

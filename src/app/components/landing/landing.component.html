@@ -1,28 +1,27 @@
-<div class="desktop" [style.background-image]="'url('+waveDesktop+')'">
-    <img src="assets/images/mockups/landing.png" alt="image" class="image">
+<div class="desktop">
     <div class="heading">
-        <div class="d-flex justify-content-center">
-            <img src="assets/images/logo.svg" alt="" class="logo-vector">
-            <div class="d-flex flex-column">
-                <div class="header">Hello<br />World!</div>
-                <div class="subheader">Need an app? I got You.<br />Check my offer below.</div>
-                <button (click)="scrollTo('offer')" class="btn btn-third btn-icon">
-                    Check
-                    <fa-icon [icon]="faArrowRight"></fa-icon>
-                </button>
-            </div>
+        <div class="d-flex flex-column">
+            <div class="header">avecode</div>
+            <div class="subheader">Sophisticated apps, tailored for you.<br/>Crafted with <span
+                    class="text-bold">love</span>,
+                <span class="text-bold">passion</span> and <span class="text-bold">commitment</span></div>
+            <button (click)="scrollTo('offer')" class="btn btn-secondary btn-icon">
+                Explore
+                <fa-icon [icon]="faArrowRight"></fa-icon>
+            </button>
         </div>
     </div>
 </div>
-<div class="mobile" [style.background-image]="'url('+waveMobile+')'">
+<div class="mobile">
     <div class="heading">
-        <div class="header">Hello World!</div>
-        <div class="subheader">Need app? I got You. Check my offer below.</div>
+        <div class="header">avecode</div>
+        <div class="subheader">Sophisticated apps, tailored for you.<br/>Crafted with <span
+                class="text-bold">love</span>,
+            <span class="text-bold">passion</span> and <span class="text-bold">commitment</span></div>
+        <button (click)="scrollTo('offer')" class="btn btn-secondary btn-icon">
+            Check
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </button>
     </div>
-    <img src="assets/images/mockups/landing_mobile.png" alt="image" class="image">
-    <button (click)="scrollTo('offer')" class="btn btn-third btn-icon">
-        Check
-        <fa-icon [icon]="faArrowRight"></fa-icon>
-    </button>
 </div>
 

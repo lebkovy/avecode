@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavigationService} from "../../services/navigation.service";
 import {contactMail} from "../../constants";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 interface IItem {
     label: string;
@@ -25,6 +26,7 @@ export class FooterComponent {
     }
 
     year: number | undefined;
+    contactMail = contactMail;
     sections: ISection[] = [
         {
             label: 'Sections', items: [
@@ -50,8 +52,7 @@ export class FooterComponent {
             ]
         },
         {
-            label: 'Contact', items: [
-                {label: contactMail, link: `mailto:${contactMail}`},
+            label: '', items: [
                 {label: 'CliftonStrengths 34 Report', link: 'assets/docs/CliftonStrengths.pdf'},
                 {label: 'Resume', link: 'assets/docs/resume.pdf'},
             ]
@@ -62,4 +63,6 @@ export class FooterComponent {
         if (item.anchor) this.navigationService.scrollTo(item.link);
         else window.open(item.link, '_blank');
     }
+
+    protected readonly faArrowRight = faArrowRight;
 }
