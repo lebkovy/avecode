@@ -1,0 +1,54 @@
+@import 'src/app/shared/theme/colors';
+@import 'src/app/shared/theme/media';
+
+.col-background {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.latest {
+  margin: -100px 0 0;
+  z-index: 1;
+}
+
+.link-href {
+  text-decoration: none;
+  margin-left: 12px;
+
+  .android:hover {
+    border-color: $android-color;
+    transition: .2s;
+  }
+}
+
+.pill {
+  justify-content: flex-start;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: $desktop-width) {
+  .latest {
+    max-width: 100%;
+    margin-bottom: 72px;
+  }
+  .row-section {
+    flex-direction: column-reverse;
+  }
+  .tool-logo {
+    height: 25px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .latest {
+    max-width: 100%;
+  }
+  .tool-logo {
+    height: 35px;
+    margin-right: 24px;
+  }
+  .col-background {
+    margin-top: -100px;
+  }
+}

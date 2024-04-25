@@ -12,6 +12,7 @@ import {AboutComponent} from './components/about/about.component';
 import {QuoteComponent} from './shared/components/quote/quote.component';
 import {HomeComponent} from './components/home/home.component';
 import {Route, RouterModule} from "@angular/router";
+import {WebAppsComponent} from './components/web-apps/web-apps.component';
 
 const routes: Route[] = [
     {path: '', component: HomeComponent},
@@ -23,13 +24,13 @@ const routes: Route[] = [
         AppComponent,
         NavbarComponent,
         OfferComponent,
-        OfferComponent,
         MobileAppsComponent,
         LandingComponent,
         FooterComponent,
         AboutComponent,
         QuoteComponent,
         HomeComponent,
+        WebAppsComponent,
     ],
     imports: [
         BrowserModule,

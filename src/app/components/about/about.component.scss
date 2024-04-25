@@ -13,25 +13,12 @@ $gap: 8px;
 }
 
 .app-container {
-  padding: 10% 10%;
-}
-
-p {
-  color: hsla(0, 0, 100%, .8);
+  padding: 5% 5%;
 }
 
 .col-me {
   width: 220px;
   z-index: 1;
-}
-
-.photo-container {
-  padding: 18px;
-  border-radius: 50%;
-  border: 3px solid $third-color;
-  width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
 }
 
 .badges {
@@ -58,6 +45,9 @@ p {
 }
 
 @media screen and (min-width: $desktop-width) {
+  .me {
+    max-width: 100%;
+  }
   .col-image {
     padding-left: 5%;
   }

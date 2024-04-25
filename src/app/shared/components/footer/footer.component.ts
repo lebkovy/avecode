@@ -32,6 +32,7 @@ export class FooterComponent {
             label: 'Sections', items: [
                 {label: 'Offer', link: 'offer', anchor: true},
                 {label: 'Mobile Apps', link: 'mobile-apps', anchor: true},
+                {label: 'Websites', link: 'web-apps', anchor: true},
                 {label: 'About Me', link: 'about', anchor: true},
             ]
         },

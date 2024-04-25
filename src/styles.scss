@@ -20,6 +20,14 @@ body {
   font-family: "SF Pro Display Regular", sans-serif;
   font-size: 18px;
   overflow-x: hidden;
+
+  .bg-dark {
+    color: $light-color;
+  }
+
+  .bg-light {
+    color: $dark-color;
+  }
 }
 
 .no-gutters {
@@ -28,7 +36,7 @@ body {
 }
 
 .app-container {
-  padding: 0 10%;
+  padding: 0 5%;
   margin-top: -1px;
 
   .col-background {

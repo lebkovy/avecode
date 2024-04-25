@@ -18,6 +18,7 @@ export class NavbarComponent {
         {label: 'Home Page', anchor: 'landing'},
         {label: 'My Offer', anchor: 'offer'},
         {label: 'Mobile Apps', anchor: 'mobile-apps'},
+        {label: 'Websites', anchor: 'web-apps'},
         {label: 'About Me', anchor: 'about'},
     ];
     currentAnchor$: Observable<string> | undefined;
