@@ -1,1 +1,1 @@
-export const contactMail: string = "lebiedzinski.jakub.maciej@gmail.com";
+export const contactMail: string = "avecode.apps@gmail.com";
