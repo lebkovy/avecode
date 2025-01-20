@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {LatestService} from "../../shared/services/latest.service";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {contactMail} from "../../shared/constants";
 
 @Component({
     selector: 'web-apps',
@@ -29,4 +31,7 @@ export class WebAppsComponent {
     get description() {
         return this.latestService.description;
     }
+
+    protected readonly faArrowRight = faArrowRight;
+    protected readonly contactMail = contactMail;
 }

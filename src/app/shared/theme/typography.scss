@@ -21,6 +21,16 @@
   src: url('~src/assets/fonts/SF-Pro-Display-Semibold.otf');
 }
 
+@font-face {
+  font-family: "AT Osmose Bold";
+  src: url('~src/assets/fonts/ATOsmose-Bold.ttf');
+}
+
+h1, h2, h3, h4, .text-bold {
+  font-family: "SF Pro Display Semibold", sans-serif;
+  font-weight: normal;
+}
+
 h3 {
   font-size: 44px;
   width: auto;
@@ -35,10 +45,6 @@ h3 {
 p {
   line-height: 15px;
   font-size: 17px;
-}
-
-.text-bold {
-  font-family: "SF Pro Display Semibold", sans-serif;
 }
 
 .label {
