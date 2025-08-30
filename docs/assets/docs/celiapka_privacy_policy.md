@@ -4,7 +4,7 @@ Polityka Prywatności określa zasady przetwarzania oraz ochrony danych osobowyc
 
 ### **2. Administrator danych osobowych**
 
-Administratorem danych osobowych użytkowników jest ***avecode | enjoyable apps***. Kontakt w sprawach ochrony danych możliwy jest pod adresem e-mail: ***$contactEmail***.
+Administratorem danych osobowych użytkowników jest ***avecode | enjoyable apps***. Kontakt w sprawach ochrony danych możliwy jest pod adresem e-mail: [***$contactEmail***](mailto:$contactEmail).
 
 ### **3. Cel i zakres przetwarzania danych**
 
@@ -43,4 +43,4 @@ Aplikacja nie korzysta z plików cookies ani podobnych technologii do śledzenia
 
 ### **10. Kontakt**
 
-W celu uzyskania informacji dotyczących polityki prywatności, prosimy o kontakt na adres: ***$contactEmail***.
+W celu uzyskania informacji dotyczących polityki prywatności, prosimy o kontakt na adres: [***$contactEmail***](mailto:$contactEmail).
