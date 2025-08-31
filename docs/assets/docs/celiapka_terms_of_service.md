@@ -1,5 +1,3 @@
-# WARUNKI KORZYSTANIA
-
 **Data wejścia w życie:** 30 sierpnia 2025  
 **Wersja:** 1.0
 
