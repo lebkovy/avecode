@@ -424,5 +424,5 @@ Administrator udziela informacji w sprawach:
 ---
 
 **Data ostatniej aktualizacji:** 30 sierpnia 2025  
-**Wersja dokumentu:** 2.0  
+**Wersja dokumentu:** 1.0  
 **Administrator:** avecode | enjoyable apps
